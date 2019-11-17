@@ -1,0 +1,59 @@
+label.btn {
+	input {
+		display: none !important;
+	}
+}
+
+.btn {
+	@include flex(center, center, nowrap, inline-flex);
+	vertical-align: middle;
+	border: 1px solid transparent;
+	outline: none;
+	text-align: center;
+	cursor: pointer;
+	@include transition;
+
+	&--white {
+		border-color: $white;
+		background: $white;
+		color: $lBlack;
+
+		&:hover {
+			background: $lBlack;
+			color: $white;
+		}
+	}
+
+	&--watch {
+		width: 100%;
+		height: auto;
+		max-width: 200px;
+		padding: 10px 15px;
+		text-transform: uppercase;
+		background: $yellowAr;
+		color: $black;
+		border: 1px solid $yellowAr;
+		font-size: 14px;
+		font-family: 'OpenSans-Bold';
+		&:hover {
+			background: transparent;
+			color: $yellowAr;
+		}
+	}
+	&--more {
+		width: 100%;
+		height: auto;
+		max-width: 200px;
+		padding: 10px 15px;
+		text-transform: uppercase;
+		background: transparent;
+		color: $white;
+		border: 1px solid $white;
+		font-size: 14px;
+		font-family: 'OpenSans-Bold';
+		&:hover {
+			background: $white;
+			color: $black;
+		}
+	}
+}

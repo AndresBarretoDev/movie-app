@@ -1,0 +1,20 @@
+form {
+	input[type='text'],
+	input[type='password'],
+	input[type='date'],
+	input[type='phone'],
+	input[type='number'],
+	input[type='email']{
+		@include placeholder{
+			// Placeholder styles here ↓ ↓ ↓
+		}
+	}
+}
+.form{
+	&__input{
+		border: 1px solid #444;
+		border-radius: 5px;
+		height: 30px;
+		padding: 0 10px;
+	}
+}

@@ -1,0 +1,46 @@
+.tabsList {
+  width: 100%;
+  min-height: 50px;
+  @include flex(flex-start);
+  padding: 15px;
+  margin-top: 30px;
+
+  &__item {
+    min-width: 60px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+    @include flex;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+    margin-right: 15px;
+    font-family: 'OpenSans-Bold';
+    margin-bottom: 10px;
+    @media #{$mediaMobile}{
+      font-size: 12px;
+    }
+    
+    &:hover{
+      border-bottom: 2px solid $black;
+      transition: all .4s ease;
+      position: relative;
+    }
+
+    &.active{
+      border-bottom: 2px solid $black;
+      transition: all .4s ease;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -10px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $black;
+      }
+    }
+  }
+}

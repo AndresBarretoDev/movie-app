@@ -1,0 +1,66 @@
+// @import 'https://fonts.googleapis.com/css?family=Roboto';
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('assets/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/OpenSans-Regular.otf') format('opentype'),
+		url('assets/fonts/OpenSans-Regular.woff') format('woff'),
+		url('assets/fonts/OpenSans-Regular.ttf') format('truetype'),
+		url('assets/fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('assets/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/OpenSans-Bold.otf') format('opentype'),
+		url('assets/fonts/OpenSans-Bold.woff') format('woff'),
+		url('assets/fonts/OpenSans-Bold.ttf') format('truetype'),
+		url('assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-SemiBold';
+	src: url('assets/fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/OpenSans-SemiBold.otf') format('opentype'),
+		url('assets/fonts/OpenSans-SemiBold.woff') format('woff'),
+		url('assets/fonts/OpenSans-SemiBold.ttf') format('truetype'),
+		url('assets/fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.opReg {
+	font-family: 'OpenSans-Regular';
+}
+
+.opBold {
+	font-family: 'OpenSans-Bold';
+}
+
+.opSemBold {
+	font-family: 'OpenSans-SemiBold';
+}
+
+.taC {
+	text-align: center;
+}
+
+.taR {
+	text-align: right;
+}
+
+.taL {
+	text-align: left;
+}
+
+.taJ {
+	text-align: justify;
+}
+.ttU{
+	text-transform: uppercase;
+}
