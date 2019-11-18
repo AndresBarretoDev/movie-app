@@ -28,29 +28,48 @@
         justify-content: center;
         flex-direction: column;
         color: $white;
-        @media #{$mediaMobile}{
-      width: 100%;
-      max-width: unset;
+
+        @media #{$mediaSM} {
+            width: 100%;
+            // max-width: unset;
+        }
+        @media #{$mediaXMobile} {
+            width: 100%;
+            max-width: unset;
         }
     }
 
     &__head {
-        & span{
+        & span {
             font-size: 50px;
+            @media #{$mediaMobile} {
+                font-size: 40px;
+            }
+            @media #{$mediaXMobile} {
+                font-size: 35px;
+            }
         }
     }
 
     &__description {
         padding: 30px 0;
         font-size: 18px;
+        @media #{$mediaMobile} {
+            font-size: 16px;
+        }
     }
 
     &__cta {
         width: 100%;
         margin-top: 5px;
+
+        @media #{$mediaXMobile} {
+            text-align: center;
+        }
     }
-    &__controls{
-        justify-content: flex-end!important;
+
+    &__controls {
+        justify-content: flex-end !important;
     }
 
     & .v-responsive__sizer {

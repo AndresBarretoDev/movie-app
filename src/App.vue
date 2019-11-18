@@ -2,13 +2,10 @@
   <div class="">
     <!-- NAVIGATION BAR -->
     <Navigation></Navigation>
+    <!-- NAVIGATION BAR -->
     <div>
       <router-view />
     </div>
-    <!-- NAVIGATION BAR -->
-    <!-- SLIDER -->
-    
-    <!-- SLIDER -->
   </div>
 </template>
 
@@ -29,7 +26,7 @@
       }
     },
     created() {
-      console.log("path", this.$route.path)
+      // console.log("path", this.$route.path)
     },
   };
 </script>

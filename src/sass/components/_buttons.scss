@@ -39,6 +39,14 @@ label.btn {
 			background: transparent;
 			color: $yellowAr;
 		}
+		@media #{$mediaTablet}{
+			max-width: 48%;
+		}
+		@media #{$mediaXMobile}{
+			max-width: 48%;
+			font-size: 12px;
+			padding: 7px 0;
+		}
 	}
 	&--more {
 		width: 100%;
@@ -54,6 +62,14 @@ label.btn {
 		&:hover {
 			background: $white;
 			color: $black;
+		}
+		@media #{$mediaTablet}{
+			max-width: 48%;
+		}
+		@media #{$mediaXMobile}{
+			max-width: 48%;
+			font-size: 12px;
+			padding: 7px 0;
 		}
 	}
 }

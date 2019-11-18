@@ -1,16 +1,18 @@
 <template>
     <div>
         <!-- SIDEBAR MOBILE -->
-        <v-navigation-drawer v-if="drawer" app absolute dark disable-resize-watcher class="deep-purple" v-model="drawer" >
+        <v-navigation-drawer v-if="drawer" app absolute  disable-resize-watcher class="" v-model="drawer" >
             <v-list>
                 <v-list-item v-for="(item,indexm) in menuBar" :key="indexm" link>
-                    <v-list-item-icon>
+                    <!-- <v-list-item-icon>
                         <v-icon>{{item.icon}}</v-icon>
-                    </v-list-item-icon>
+                    </v-list-item-icon> -->
 
                     <v-list-item-content>
                         <v-list-item-title>
-                            <router-link v-bind:to="item.url" class="item.class">{{item.name}}</router-link>
+                            <router-link 
+                            v-bind:to="item.url" class="opSemBold ttU">{{item.name}}
+                            </router-link>
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>

@@ -5,6 +5,10 @@
         height: 80px !important;
         justify-content: space-between;
         padding: 0px !important;
+
+        @media #{$mediaXMobile} {
+            height: 60px !important;
+        }
     }
 }
 
@@ -21,7 +25,7 @@
     }
 
     &__logo {
-        width: 50%;
+        width: 40%;
         height: 100%;
         @include flex(flex-start);
 
@@ -30,18 +34,14 @@
             max-width: 177px;
             height: 49px;
             display: block;
+
+            @media #{$mediaXMobile} {
+                max-width: 150px;
+                height: auto;
+            }
         }
 
-        // @media #{$mediaTablet} {
-        //     width: 33%;
 
-        // }
-
-        // @media #{$mediaXMobile} {
-        //     width: 130px;
-        //     height: 22px;
-        //     margin-right: 10px;
-        // }
     }
 
     &__img {
@@ -53,20 +53,31 @@
     &__burger {
         display: none !important;
 
+        & .mdi-menu {
+            font-size: 36px!important;
+
+            &::before {
+                color: $black !important;
+            }
+        }
+
         @media #{$mediaTablet} {
             display: inline-block !important;
         }
+
     }
 
     &__nav {
-        width: 50%;
+        width: 60%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
         @media #{$mediaTablet} {
-           display: none;
+            display: none;
         }
+
     }
 
     &__list {
@@ -74,19 +85,22 @@
         height: 100%;
         @include flex(flex-end);
         padding-left: 0;
-        
+
         &__item {
             width: auto;
             height: 100%;
             margin: auto 5px;
-            &:last-child{
+
+            &:last-child {
                 background: $grayAr;
             }
-            &:hover{
+
+            &:hover {
                 background: $yellowAr;
                 transition: all .5s ease;
                 color: white;
             }
+
             & a {
                 width: auto;
                 height: 100%;
@@ -95,16 +109,30 @@
                 color: $black;
                 padding: 0 15px;
                 transition: all .5s ease;
-              
+
                 @media #{$mediaLG} {
                     margin: 0;
                 }
-               
-                &.router-link-exact-active{
+
+                &.router-link-exact-active {
                     background: $yellowAr;
-                }  
+                }
             }
-           
+
         }
     }
+}
+// MOBILE NAVIGATION
+.v-list-item__title{
+    & a{
+        width: 100%;
+        display: block;
+        color: $black;
+        padding: 10px;
+        &.router-link-exact-active {
+            background: $yellowAr;
+        }
+    }
+    
+
 }

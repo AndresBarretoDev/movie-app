@@ -2,7 +2,8 @@
     width: 25%;
     height: auto;
     padding: 0 7px;
-    @media #{$mediaMobile}{
+
+    @media #{$mediaMobile} {
         width: 50%;
     }
 
@@ -28,6 +29,9 @@
         position: relative;
         min-height: 350px;
 
+        @media #{$mediaXMobile} {
+            min-height: 300px;
+        }
     }
 
     &__img {
