@@ -32,6 +32,7 @@
                         <li class="toolbar__list__item" v-for="(item, index) in menuBar" :key="index">
                             <router-link v-bind:to="item.url" class="opSemBold ttU">{{item.name}}</router-link>
                         </li>
+                        <a class="toolbar__list__item"  href="https://www.toptal.com/platform/talent/application_info/edit" target="_blank" rel="noopener noreferrer"></a>
                     </ul>
                 </div>
                 <v-app-bar-nav-icon  class="toolbar__burger" @click="drawer = !drawer"></v-app-bar-nav-icon>
@@ -73,7 +74,7 @@
                     {
                         id: 4,
                         name: "sign in",
-                        url: "/signin",
+                        url: "https://www.toptal.com/platform/talent/application_info/edit",
                         icon: 'mdi-view-dashboard'
                     }
                 ]

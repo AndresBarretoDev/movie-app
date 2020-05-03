@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Carousel :movieSlider="sliderData" />
-    <MovieList />  <!-- prop :moviePoster="movieData" -->
+    <MovieList /> <!-- prop :moviePoster="movieData" -->
    
   </div>
 </template>
